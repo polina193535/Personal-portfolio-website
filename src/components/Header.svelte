@@ -25,13 +25,13 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
                 <li>
-                    <button class="button" on:click={comic}> XKCD Comic</button>
+                    <div class="bth-container" style="position: relative; top: -5px;">
+                    <button class="btn btn-color-2 project-btn" on:click={comic}> XKCD Comic</button>
+                    </div>
                 </li>
             </ul>
         </div>
  </nav>     
-
-
 
 <style>
 
@@ -73,6 +73,38 @@ a:hover {
 
 .logo:hover {
     cursor: default;
+}
+
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+
+}
+
+.btn-color-2:hover{
+   cursor: pointer;
+}
+
+.btn-color-2:hover{
+   background: rgb(53, 53, 53);
+   color: white;
+}
+
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 

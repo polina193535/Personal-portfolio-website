@@ -26,6 +26,7 @@ import Home from "./Home.svelte";
   comic.appendChild(img);
 
   const title = document.createElement("h2");
+  title.style.textAlign = "center";
   title.textContent = info.safe_title;
   comic.appendChild(title);
 
@@ -37,6 +38,7 @@ import Home from "./Home.svelte";
 
   const published = document.createElement("div");
   published.textContent = "Published: ";
+  published.style.textAlign = "center";
   published.appendChild(time.cloneNode(true));
   comic.appendChild(published);
 
@@ -51,6 +53,58 @@ const backhome=(event : MouseEvent)=> {
 
 <body> 
     <div id="comicDetails"></div>
-    <button class="button" on:click={backhome}> Back</button>
+    <div class="bth-container">
+    <button class="btn btn-color-2 project-btn" on:click={backhome}> Back</button>
+    </div>
     <main></main>
 </body>
+              
+<style>
+    main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+
+        
+    div {
+        color: black;
+        font-size: 1.5rem;
+        font-family: "Poppins", sans-serif;
+            
+    }   
+    
+.btn {
+font-weight: 600;
+transition: all 300ms ease;
+padding: 1rem;
+    border-radius: 2rem;
+}
+
+
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+
+}
+
+.btn-color-2:hover{
+   cursor: pointer;
+}
+
+.btn-color-2:hover{
+   background: rgb(53, 53, 53);
+   color: white;
+}
+
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+
+    </style>
