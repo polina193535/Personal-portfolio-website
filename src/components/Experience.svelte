@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 
   import galochka from '../img/galochka.png';
 
