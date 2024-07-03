@@ -1,14 +1,5 @@
 <script lang="ts">
     import router from 'page';
-    import { Router, Route } from 'svelte-routing';
-
-    import Home from "./Home.svelte";
-
-    import Comic from './Comic.svelte';
-
-    const home = (event: MouseEvent) => {
-        router("/Home")
-    }
     const comic = (event: MouseEvent) => {
         router("/Comic")
     }

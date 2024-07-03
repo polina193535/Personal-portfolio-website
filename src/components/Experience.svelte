@@ -1,92 +1,62 @@
-<script lang="ts">
-    import galochka from '../img/galochka.png'
+<script>
+
+  import galochka from '../img/galochka.png';
+
+  export let frontendExperience = [
+    { technology: 'HTML', level: 'Intermediate' },
+    { technology: 'CSS', level: 'Intermediate' },
+    { technology: 'JavaScript', level: 'Basic' },
+    { technology: 'TypeScript', level: 'Basic' }
+  ];
+
+  export let backendExperience = [
+    { technology: 'Java', level: 'Intermediate' },
+    { technology: 'C++', level: 'Intermediate' },
+    { technology: 'Python', level: 'Intermediate' },
+    { technology: 'C', level: 'Intermediate' }
+  ];
+
+
 </script>
 
-
 <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src={galochka}
-                                alt="Experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src={galochka}
-                                alt="Experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-
-                        <article> 
-                            <img src={galochka}
-                                alt="Experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src={galochka}
-                                alt="Experience icon" class="icon">
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src={galochka}
-                                alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Java</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src={galochka}
-                                alt="Experience icon" class="icon">
-                            <div>
-                                <h3>C++</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src={galochka}
-                                alt="Experience icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src={galochka}
-                                alt="Experience icon" class="icon">
-                            <div>
-                                <h3>C</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="article-container">
+          {#each frontendExperience as item}
+            <article>
+              <img src={galochka} alt="Experience icon" class="icon">
+              <div>
+                <h3>{item.technology}</h3>
+                <p>{item.level}</p>
+              </div>
+            </article>
+          {/each}
         </div>
-    </section>
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">Backend Development</h2>
+        <div class="article-container">
+          {#each backendExperience as item}
+            <article>
+              <img src={galochka} alt="Experience icon" class="icon">
+              <div>
+                <h3>{item.technology}</h3>
+                <p>{item.level}</p>
+              </div>
+            </article>
+          {/each}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 

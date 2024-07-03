@@ -8,9 +8,7 @@ interface ComicInfo {
 }
 
 import { formatDistanceToNow } from "date-fns";
-import Home from "./Home.svelte";
-    import { Router } from "svelte-routing";
-    import router from 'page'; 
+import router from 'page'; 
 
 (async function () {
   const id = await fetch(`https://fwd.innopolis.university/api/hw2?email=p.kostikova@innopolis.university`)

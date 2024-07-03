@@ -1,9 +1,8 @@
 <script lang="ts">
-    // Import the images
+
     import ode1 from '../img/ode1.jpg';
     import code2 from '../img/code2.jpg';
 
-    // Define the event handlers
     function openBookStore() {
         location.href = 'https://github.com/polina193535/Online-Book-Store';
     }

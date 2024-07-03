@@ -64,11 +64,6 @@ p {
     margin-bottom: 1rem;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
 
 a {
     color: black;

@@ -1,44 +1,44 @@
 <script lang="ts">
-    import medal from '../img/medal.png';
-    import education from '../img/education.png';
-    import me from '../img/photo_5422364068121008391_y.jpg';
+  import medal from '../img/medal.png';
+  import education from '../img/education.png';
+  import me from '../img/photo_5422364068121008391_y.jpg';
+
+
+  let experience = '0+ years\nFrontend Development';
+  let educationInfo = 'Secondary general\neducation';
+  let aboutText = `I am a first year student of Innopolis University. Field of study: Information
+    systems engineering. I am 19 years old. All my life I lived in Vladimir, and now I am in Innopolis. 
+    I have already learned several programming languages and now I am immersing myself in the world of front-end development.`;
+ 
 </script>
 
 <section id="about">
-        <p class="section__text__p1">Get To Know More</p> 
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src={me}
-                    alt="About" style="border-radius: 5%;" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src={medal}
-                            alt="Experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>0+ years <br> Frontend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src={education}
-                            alt="Education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>Secondary general<br>education</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>I am a first year student of Innopolis University. Field of study: Information
-                        systems engineering. I am 19 years old.
-                        All my life I lived in Vladimir,
-                        and now I am in Innopolis. I have already
-                        learned several programming languages and
-                        now I am immersing myself in the world of
-                        front-end development.</p>
-                </div>
-            </div>
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img src={me} alt="About" style="border-radius: 5%;" class="about-pic">
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src={medal} alt="Experience icon" class="icon">
+          <h3>Experience</h3>
+          <p>{experience}</p>
         </div>
-    </section>
+        <div class="details-container">
+          <img src={education} alt="Education icon" class="icon">
+          <h3>Education</h3>
+          <p>{educationInfo}</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>{aboutText}</p>
+      </div>
+    </div>
+  </div>
+
+</section>
 
 
 
